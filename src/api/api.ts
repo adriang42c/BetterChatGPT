@@ -33,15 +33,15 @@ export const getChatCompletion = async (
         ? '2023-07-01-preview'
         : '2023-03-15-preview';
 
-    const path = `openai/deployments/${model}/chat/completions?api-version=${apiVersion}`;
+//    const path = `openai/deployments/${model}/chat/completions?api-version=${apiVersion}`;
 
-    if (!endpoint.endsWith(path)) {
-      if (!endpoint.endsWith('/')) {
-        endpoint += '/';
-      }
-      endpoint += path;
-    }
-  }
+//    if (!endpoint.endsWith(path)) {
+//      if (!endpoint.endsWith('/')) {
+//        endpoint += '/';
+//      }
+//      endpoint += path;
+//    }
+//  }
 
   const response = await fetch(endpoint, {
     method: 'POST',
