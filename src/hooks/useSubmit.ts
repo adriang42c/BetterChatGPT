@@ -92,7 +92,7 @@ const useSubmit = () => {
         );
       } else if (apiKey) {
         // own apikey
-        stream = await getChatCompletion(
+        stream = await getChatCompletionStream(
           useStore.getState().apiEndpoint,
           messages,
           chats[currentChatIndex].config,
